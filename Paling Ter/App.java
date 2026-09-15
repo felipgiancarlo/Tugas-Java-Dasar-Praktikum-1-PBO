@@ -13,7 +13,7 @@ public class App {
 
             analyzeAndPrintStatistics(counts);
         } finally {
-            sc.close(); // Best Practice: Aman dari memory leak
+            sc.close(); 
         }
     }
 

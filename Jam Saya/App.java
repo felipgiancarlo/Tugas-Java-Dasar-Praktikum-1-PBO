@@ -37,11 +37,6 @@ public class App {
             sc.close(); // Best Practice: Mencegah kebocoran memori (memory leak)
         }
     }
-
-    // ==============================================================================
-    // SEPARATION OF CONCERN / MODULARISASI
-    // ==============================================================================
-
     /**
      * Memvalidasi format teks harus sesuai pola Angka:Angka
      */

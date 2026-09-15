@@ -13,7 +13,7 @@ public class App {
             
             processMatrixAnalysis(n, matrix);
         } finally {
-            sc.close(); // Best practice: Scanner selalu ditutup apa pun yang terjadi
+            sc.close(); 
         }
     }
 
