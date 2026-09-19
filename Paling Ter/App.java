@@ -28,7 +28,7 @@ public class App {
                 counts.put(val, counts.getOrDefault(val, 0L) + 1);
                 hasData = true;
             } catch (NumberFormatException e) {
-                // Clean Code: Mengabaikan input yang bukan angka secara spesifik
+                
             }
         }
         return hasData;

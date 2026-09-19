@@ -34,7 +34,7 @@ public class App {
             calculateAndPrintResult(startH, startM, baseMin, deltaMin);
             
         } finally {
-            sc.close(); // Best Practice: Mencegah kebocoran memori (memory leak)
+            sc.close(); 
         }
     }
     /**
@@ -82,7 +82,7 @@ public class App {
     private static void calculateAndPrintResult(int startH, int startM, int baseMin, int deltaMin) {
         int finalTotalMin = baseMin + deltaMin;
         
-        // Menggunakan Math.floorDiv untuk menghitung jumlah hari terlewati secara aman
+        // Menggunakan Math.floorDiv untuk menghitung jumlah hari terlewati
         int days = Math.abs(Math.floorDiv(finalTotalMin, 1440));
         
         // Menggunakan Math.floorMod agar sisa menit selalu positif meskipun finalTotalMin negatif

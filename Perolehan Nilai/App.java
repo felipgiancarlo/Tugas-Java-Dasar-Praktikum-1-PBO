@@ -69,7 +69,7 @@ public class App {
 
             double nilaiAkhir = kPA + kT + kK + kP + kUTS + kUAS;
             
-            // Pembulatan ke 2 angka desimal untuk menghindari bug floating point (presisi memori)
+            // Pembulatan ke 2 angka desimal untuk menghindari bug floating point
             nilaiAkhir = Math.round(nilaiAkhir * 100.0) / 100.0;
             
             String grade = tentukanGrade(nilaiAkhir);
