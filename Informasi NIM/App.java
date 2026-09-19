@@ -46,7 +46,6 @@ public class App {
             case "22S": return "Sarjana Teknik Metalurgi";
             case "31S": return "Sarjana Teknik Bioproses";
             case "32S": return "Sarjana Bioteknologi";
-            // FIX: Mengubah "Rekasaya" menjadi "Rekayasa" sesuai TC-11
             case "114": return "Diploma 4 Teknologi Rekayasa Perangkat Lunak";
             case "113": return "Diploma 3 Teknologi Informasi";
             case "133": return "Diploma 3 Teknologi Komputer";
