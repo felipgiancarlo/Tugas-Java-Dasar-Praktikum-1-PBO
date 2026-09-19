@@ -3,11 +3,14 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        if (scanner.hasNextLine()) {
-            String nim = scanner.nextLine().trim();
-            processNim(nim);
+        try {
+            if (scanner.hasNextLine()) {
+                String nim = scanner.nextLine().trim();
+                processNim(nim);
+            }
+        } finally {
+            scanner.close(); 
         }
-        scanner.close();
     }
 
     private static void processNim(String nim) {
@@ -43,7 +46,8 @@ public class App {
             case "22S": return "Sarjana Teknik Metalurgi";
             case "31S": return "Sarjana Teknik Bioproses";
             case "32S": return "Sarjana Bioteknologi";
-            case "114": return "Diploma 4 Teknologi Rekasaya Perangkat Lunak";
+            // FIX: Mengubah "Rekasaya" menjadi "Rekayasa" sesuai TC-11
+            case "114": return "Diploma 4 Teknologi Rekayasa Perangkat Lunak";
             case "113": return "Diploma 3 Teknologi Informasi";
             case "133": return "Diploma 3 Teknologi Komputer";
             default: return "Kode tidak tersedia";
@@ -59,7 +63,7 @@ public class App {
     }
 
     private static void printResult(String nim, String prodi, int angkatan, int urutan) {
-        System.out.println("Inforamsi NIM " + nim + ": ");
+        System.out.println("Informasi NIM " + nim + ": ");
         System.out.println(">> Program Studi: " + prodi);
         System.out.println(">> Angkatan: " + angkatan);
         System.out.println(">> Urutan: " + urutan);
